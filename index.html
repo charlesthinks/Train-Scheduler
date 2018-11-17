@@ -1,0 +1,58 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (Min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td>Polar Express</td>
+                <td>North Pole</td>
+                <td>25</td>
+                <td>12:25</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="delete">Delete</button>
+
+    <br><br>
+
+    <form>
+        <label for="trainName">Train Name</label>
+        <input type="text" id="trainName" placeholder="Polar Express">
+
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="North Pole">
+
+        <label for="frequency">Frequency (Min)</label>
+        <input type="text" id="frequency" placeholder="30">
+
+        <label for="trainTime">First Train Time (HH:MM - Military Time)</label>
+        <input type="text" id="trainTime" placeholder="12:30">
+
+        <br>
+
+        <input type="button" class="submit" value="Add Train">
+    </form>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
