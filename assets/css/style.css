@@ -1,0 +1,41 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: auto;
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+label{
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 300px;
+}
+
+.inputs{
+    width: 750px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+.delete {
+    margin-left: 47%;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: lightgrey;
+    height: 30px;
+}
+
+.submit {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: lightgrey;
+    height: 30px;
+}
